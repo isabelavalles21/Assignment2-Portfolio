@@ -1,0 +1,36 @@
+<%- include('../partials/header') %>
+
+<h2 class="mb-4">Contact</h2>
+
+<!-- success or error alert -->
+<% if (sent === true) { %>
+  <div class="alert alert-success">Thank you! Your message was sent successfully.</div>
+<% } else if (sent === false && error) { %>
+  <div class="alert alert-danger"><%= error %></div>
+<% } %>
+
+<form method="POST" action="/contact" class="card card-glass p-4">
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+    <input name="name" class="form-control" required />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input name="email" type="email" class="form-control" required />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Message</label>
+    <textarea name="message" rows="5" class="form-control" required></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit">
+    <i class="fa-regular fa-paper-plane"></i> Send
+  </button>
+</form>
+
+<p class="mt-4">
+  Prefer to connect directly?
+  <a class="link-light" href="mailto:isabela.valles@ontariotechu.net">Email me</a> ·
+  <a class="link-light" href="https://www.linkedin.com/in/isabela-valles" target="_blank">LinkedIn</a>
+</p>
+
+<%- include('../partials/footer') %>

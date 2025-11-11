@@ -1,0 +1,44 @@
+:root{
+  --purple:#390099;
+  --magenta:#9e0059;
+  --hotpink:#ff0054;
+  --orange:#ff5400;
+  --gold:#ffbd00;
+}
+
+html,body{height:100%;}
+.bg-grad{
+  min-height:100%;
+  background: linear-gradient(135deg, var(--purple), var(--magenta), var(--hotpink));
+  background-size: 200% 200%;
+  animation: gradMove 15s ease infinite;
+}
+
+@keyframes gradMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.nav-glass{
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+}
+
+.card-glass{
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+}
+
+.headshot{
+  max-height: 360px;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.5);
+}
+
+/* About page carousel sizing */
+.about-photo{
+  max-height: 520px;     /* adjust if you want taller/shorter */
+  object-fit: cover;     /* fills the frame without distortion */
+}

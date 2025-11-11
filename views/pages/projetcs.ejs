@@ -1,0 +1,31 @@
+<%- include('../partials/header') %>
+
+<h2 class="mb-4">Projects</h2>
+
+<div class="row g-4">
+  <% projects.forEach(p => { %>
+    <div class="col-md-6">
+      <div class="card card-glass h-100">
+        <div class="card-body">
+          <h5 class="card-title"><%= p.title %></h5>
+          <p class="card-text"><%= p.summary %></p>
+          <p class="mb-2"><strong>Tech:</strong> <%= p.stack.join(', ') %></p>
+          <div>
+            <% if (p.links.repo) { %>
+              <a class="btn btn-sm btn-outline-primary me-2" href="<%= p.links.repo %>" target="_blank">
+                <i class="fa-brands fa-github"></i> Repo
+              </a>
+            <% } %>
+            <% if (p.links.demo) { %>
+              <a class="btn btn-sm btn-primary" href="<%= p.links.demo %>" target="_blank">
+                <i class="fa-regular fa-arrow-up-right-from-square"></i> Demo
+              </a>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% }) %>
+</div>
+
+<%- include('../partials/footer') %>
