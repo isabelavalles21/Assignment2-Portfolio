@@ -1,6 +1,6 @@
 # Express + EJS Portfolio
 
-Live site: https://YOUR-RENDER-URL  
+Live site: https://assignment2-portfolio-ya4a.onrender.com/ 
 Public repo: https://github.com/YOUR-USERNAME/Assignment2Portfolio
 
 ## Overview
