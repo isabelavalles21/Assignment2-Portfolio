@@ -17,13 +17,47 @@ router.get('/projects', (req, res) => {
   const projects = [
     {
       title: "Clueless",
-      summary: "Made for HackHive 2025: AI-powered stylist analyzes your wardrobe, understands your personal style preferences, and curates outfits tailored just for you. It considers factors like weather, upcoming events, and current fashion trends to suggest looks that fit your lifestyle.",
-      stack: ["React.js", "Firebase", "Python with Flask"],
-      links: { repo: "https://github.com/jibi21212/Clueless", demo: "https://devpost.com/software/clueless-pdc37b" }
+      summary:
+        "Made for HackHive 2025: AI-powered stylist analyzes your wardrobe and preferences, and curates outfits considering weather, events, and trends.",
+      stack: ["React.js", "Firebase", "Python (Flask)"],
+      links: {
+        repo: "https://github.com/jibi21212/Clueless",
+        demo: "https://devpost.com/software/clueless-pdc37b"
+      }
+    },
+    {
+      title: "TinyGS Project",
+      summary:
+        "Built and tested a functional ground-station antenna to receive/decode satellite signals. Wrote instructions and STEM activities for a proposed space camp.",
+      stack: ["3D Printing", "Electronics"],
+      links: {
+        repo: "#",
+        demo: "#"
+      }
+    },
+    {
+      title: "TMSA Consulting Case Competition",
+      summary:
+        "Team-based consulting case: market research, financial analysis, and strategic recommendations presented to industry judges.",
+      stack: ["Excel", "PowerPoint", "Collaboration"],
+      links: {
+        demo: "https://www.linkedin.com/posts/tommydmichailidis_tmsa2025-casecompetition-consulting-ugcPost-7316110581353140225-k-mX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZYd0sBb0-DX3aBZAt0X4Opr1_f9F3e5xI"
+      }
+    },
+    {
+      title: "OTAA Connect Conference",
+      summary:
+        "2-hour case sprint: analyzed financials under time pressure, built a narrative from the numbers, and presented to judges.",
+      stack: ["Public Speaking", "Networking", "Analysis"],
+      links: {
+        demo: "https://www.linkedin.com/posts/isabela-valles_connect2025-otaa-casecompetition-activity-7317931334088241152-3Ilv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZYd0sBb0-DX3aBZAt0X4Opr1_f9F3e5xI"
+      }
     }
   ];
+
   res.render('pages/projects', { page: 'Projects', projects });
 });
+
 
 // CONTACT (GET)
 router.get('/contact', (req, res) => {
