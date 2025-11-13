@@ -11,6 +11,9 @@ A simple 4-page portfolio (Home, About, Projects, Contact) built with Express an
 - Nodemailer (Mailtrap in dev)
 - Render (deployment)
 
+## Eternal code
+https://www.w3schools.com/howto/howto_js_slideshow.asp
+
 ## Run locally
 ```bash
 npm install
@@ -18,5 +21,4 @@ npm install
 npm run dev
 # open http://localhost:3000
 
-## Eternal code
-https://www.w3schools.com/howto/howto_js_slideshow.asp
+
