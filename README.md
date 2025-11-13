@@ -1,7 +1,6 @@
 # Express + EJS Portfolio
 
 Live site: https://assignment2-portfolio-ya4a.onrender.com/ 
-Public repo: https://github.com/YOUR-USERNAME/Assignment2Portfolio
 
 ## Overview
 A simple 4-page portfolio (Home, About, Projects, Contact) built with Express and EJS, styled with Bootstrap and a custom purple-sunset gradient. Includes a working contact form via Nodemailer.
