@@ -17,3 +17,6 @@ npm install
 # create .env with SMTP_* variables (see below)
 npm run dev
 # open http://localhost:3000
+
+## Eternal code
+https://www.w3schools.com/howto/howto_js_slideshow.asp
